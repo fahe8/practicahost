@@ -1,7 +1,8 @@
 import { React, useState, useContext } from "react";
 import { UserContext } from "../../utils/data";
 import ModalApply from "../../components/ModalApply";
-
+import carImage from "../../assets/car.png";  
+import samplePassport from "../../assets/sample-passport.jpg";
 const Apply = () => {
   const { usuario, buscarUsuarioPorDNI } = useContext(UserContext);
   const [dni, setDni] = useState("");
@@ -46,7 +47,7 @@ const Apply = () => {
             <span className="  my-[18px] mb-[20px] border-b border-[#1c3764] text-center relative flex justify-center items-center">
               <img
                 className="absolute bg-white pt-4 w-12"
-                src="/public/car.png"
+                src={carImage}
                 alt=""
               />
               <i
@@ -205,7 +206,7 @@ const Apply = () => {
                   ></i>
                   <img
                     className=""
-                    src="public/sample-passport.jpg"
+                    src={samplePassport}
                     alt=""
                     srcSet=""
                   />

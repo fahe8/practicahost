@@ -1,5 +1,5 @@
 import React from "react";
-
+import samplePass from "../assets/samplePass.jpg"
 const ModalApply = ({ closeModal }) => {
   return (
     <>
@@ -22,7 +22,7 @@ const ModalApply = ({ closeModal }) => {
             <div className=" p-6 flex-auto ">
               <div className="relative ">
                 <img className=""
-                  src="public/sample_passport_annotated.jpg"
+                  src={samplePass}
                   alt=""
                   srcset=""
                 />

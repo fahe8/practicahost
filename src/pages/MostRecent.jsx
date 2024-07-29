@@ -1,5 +1,5 @@
 import React from "react";
-
+import doc from "../assets/doc.png";  
 const MostRecent = () => {
   return (
     <section>
@@ -14,7 +14,7 @@ const MostRecent = () => {
             <span className="  my-[18px] mb-[20px] border-b border-[#1c3764] text-center relative flex justify-center items-center">
               <img
                 className="absolute bg-white pt-4 w-8"
-                src="/public/doc.png"
+                src={doc}
                 alt=""
               />
               <i
