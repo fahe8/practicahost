@@ -3,7 +3,7 @@ import AnnoucementBody from "./components/AnnoucementBody";
 import FaqCards from "./components/FaqCards";
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Apply from "./pages/apply/Apply";
 import Faq from "./pages/faq/Faq";
@@ -30,6 +30,7 @@ function App() {
         <section>
           <div className="home-wrapper">
             <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
               <Route path="/home" element={<Home />}></Route>
               <Route path="/apply" element={<Apply />}></Route>
               <Route path="/faq" element={<Faq/>}></Route>
