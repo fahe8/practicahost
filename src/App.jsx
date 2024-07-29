@@ -4,6 +4,12 @@ import FaqCards from "./components/FaqCards";
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
 import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Apply from "./pages/apply/Apply";
+import Faq from "./pages/faq/Faq";
+import History from "./pages/history";
+import MostRecent from "./pages/MostRecent";
+
 
 function App() {
   const location = useLocation();
@@ -18,18 +24,18 @@ function App() {
           </div>
         </div>
         {/* LOGOS NAVBAR */}
-        <NavBar/>
+        <NavBar />
         <AnnoucementBody />
 
         <section>
           <div className="home-wrapper">
-            {/* <Routes>
-             <Route path="/home" element={<Home />}></Route>
+            <Routes>
+              <Route path="/home" element={<Home />}></Route>
               <Route path="/apply" element={<Apply />}></Route>
-              <Route path="/faq" element={<Pqr />}></Route>
+              <Route path="/faq" element={<Faq/>}></Route>
               <Route path="/recent" element={<MostRecent/>}></Route>
               <Route path="/history" element={<History/>}></Route> 
-            </Routes> */}
+            </Routes>
             {location.pathname !== "/faq" && (
               <div className=" hidden lg:block bg-white text-center pt-6 pb-14">
                 <h3 className="">

@@ -1,4 +1,8 @@
 import React from "react";
+import dniImage from '/src/assets/dni.jpg';
+import dniFrontImage from '/src/assets/dni-front.jpg';
+import dniBackImage from '/src/assets/dni-back.jpg';
+import visaImage from '/src/assets/visa.jpg';
 
 const FaqCardTwo = () => {
   return (
@@ -18,7 +22,7 @@ const FaqCardTwo = () => {
         Sample Passport
       </h3>
       <div className="w-full">
-        <img src="/public/dni.jpg" alt="" srcset="" />
+        <img src={dniImage} alt="DNI" />
       </div>
       <div class="p-6 bg-white">
         <p class="mb-4">
@@ -172,14 +176,14 @@ const FaqCardTwo = () => {
         </div>
       </div>
       <div className="w-full">
-        <img src="public/dni-front.jpg" alt="" srcset="" />
+        <img src={dniFrontImage} alt="DNI Front" />
       </div>
       <div className="p-2"></div>
       <div className="w-full">
-        <img src="public/dni-back.jpg" alt="" srcset="" />
+        <img src={dniBackImage} alt="DNI Back" />
       </div>
       <div className="w-full">
-        <img src="public/visa.jpg" alt="" srcset="" />
+        <img src={visaImage} alt="Visa" />
       </div>
       <div className=" pt-6">
         <h3>Applying for a New I-94 - Travelers Requiring a Visa</h3>
