@@ -7,7 +7,7 @@
 }
 
 .us-official .container {
-  background: url("../public/flag.png") left 1px no-repeat;
+  background: url("/src/assets/flag.png") left 1px no-repeat;
 
   padding-left: 32px;
 }
@@ -15,7 +15,7 @@
 /*LOGOS Y NAVBAR*/
 .navbar {
   font-size: 1.125em;
-  background: #1c3764 url("../public/banner.png") top center no-repeat;
+  background: #1c3764 url("/src/assets/banner.png") top center no-repeat;
   background-size: cover;
 }
 
@@ -118,7 +118,7 @@
 }
 @media (min-width: 1024px) {
   .home-wrapper {
-    background: url("../public/white-house.jpg") 0 -195px no-repeat;
+    background: url("/src/assets/white-house.jpg") 0 -195px no-repeat;
     background-size: cover;
   }
 
@@ -149,7 +149,7 @@
 
 footer {
   color: #fff;
-  background: #1c3764 url("../public/logo_line.png") center 15px no-repeat;
+  background: #1c3764 url("/src/assets/logo_line.png") center 15px no-repeat;
   padding: 110px 0 25px 0;
   font-size: 1.15em;
 }
