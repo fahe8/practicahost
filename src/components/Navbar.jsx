@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../App.css";
+import logoI94 from './src/assets/logo-i94.png';
+import logo from './src/assets/logo.png';
 
 const NavLinks = () => {
   const location = useLocation();
@@ -68,7 +70,7 @@ const NavBar = () => {
             <Link to="/home">
               <img
                 className="logo-left"
-                src="./src/assets/logo-i94.png"
+                src={logoI94}
                 alt=""
                 srcSet=""
               />
@@ -78,7 +80,7 @@ const NavBar = () => {
             <Link to="/home">
               <img
                 className="logo-right"
-                src="./src/assets/logo.png"
+                src={logo}
                 alt=""
                 srcSet=""
               />
