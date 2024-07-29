@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../App.css";
-import logoI94 from './src/assets/logo-i94.png';
-import logo from './src/assets/logo.png';
+import logoI94 from '/src/assets/logo-i94.png';
+import logo from '/src/assets/logo.png';
 
 const NavLinks = () => {
   const location = useLocation();
